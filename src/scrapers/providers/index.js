@@ -13,6 +13,7 @@ module.exports.providers = {
         new (require('./movies/FilmXY'))(queue),
         new (require('./movies/LavinMovie'))(queue),
         new (require('./movies/MeliMedia'))(queue),
+        new (require('./movies/Putlocker'))(queue),
         new (require('./movies/StreamM4U'))(queue)
     ],
     tv: [
