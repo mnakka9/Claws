@@ -31,6 +31,7 @@ const KwikCx = require('./KwikCx');
 const StreamMoe = require('./StreamMoe');
 const VidStreaming = require('./VidStreaming');
 const XStreamCDN = require('./XStreamCDN');
+const GoGoAnime = require('./GoGoAnime');
 
 const createEvent = require('../../utils/createEvent');
 const { rd } = require('../../utils/rd');
@@ -45,6 +46,7 @@ const resolvers = [
     new KwikCx(),
     new StreamMoe(),
     new FlashX(),
+    new GoGoAnime()
 ];
 
 async function resolve(ws, uri, provider, jar, headers, quality = '', meta = { isDDL: false }, hasRD = false) {
