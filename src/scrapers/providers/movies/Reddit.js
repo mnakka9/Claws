@@ -17,7 +17,7 @@ module.exports = class Reddit extends BaseProvider {
         let headers = {};
 
         try {
-            const searchTitle = `${title} (${year})`;
+            const searchTitle = `${title} ${year}`;
             let searchUrl = this._generateUrl(url, { q: searchTitle, restrict_sr: 'on' });
             const rp = this._getRequest(req, ws);
             const jar = rp.jar();
